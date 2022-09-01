@@ -1,13 +1,14 @@
-import { H3, H1 } from './styles';
+import { Box, Heading } from 'uikit';
 import BrandLogo from './BrandLogo';
 
 const LeftHeader = () => {
   return (
-    //use box instead h3
-    <H3>
+    <Box display="flex" flexDirection="row" marginLeft="10px">
       <BrandLogo />
-      <H1>UIX Labs</H1>
-    </H3>
+      <Heading level={2} marginLeft="0.75vw">
+        UIX Labs
+      </Heading>
+    </Box>
   );
 };
 

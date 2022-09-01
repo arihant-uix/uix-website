@@ -9,8 +9,8 @@ export const H3 = styled.h3`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
-  height: 20vh;
+  padding: 0 3vw;
+  height: 13vh;
   position: absoulte;
   margin: 0px;
 `;

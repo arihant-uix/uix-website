@@ -1,5 +1,5 @@
-import { H3, H4 } from './styles';
 import Link from 'next/link';
+import { Box, Text } from 'uikit';
 
 const LinkConfig = [
   { link: '/OurServices', label: 'Our services' },
@@ -10,15 +10,15 @@ const LinkConfig = [
 ];
 const RightHeader = () => {
   return (
-    <H3>
+    <Box display="flex" flex-direction="row">
       {LinkConfig.map((link, index) => {
         return (
-          <H4 key={index}>
+          <Text key={index} marginLeft="3vw">
             <Link href={link.link}>{link.label}</Link>
-          </H4>
+          </Text>
         );
       })}
-    </H3>
+    </Box>
   );
 };
 
